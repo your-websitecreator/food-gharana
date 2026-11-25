@@ -1,0 +1,669 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FOOD GHARANA — Homemade Indian Food in Malad West, Mumbai</title>
+    <meta
+      name="description"
+      content="Authentic homemade Indian thalis, slow-cooked curries, saffron biryanis, and festive mithai crafted fresh daily in Malad West, Mumbai."
+    />
+    <meta property="og:title" content="FOOD GHARANA — Homemade Indian Food in Malad West, Mumbai" />
+    <meta
+      property="og:description"
+      content="Authentic homemade Indian thalis, slow-cooked curries, saffron biryanis, and festive mithai crafted fresh daily in Malad West, Mumbai."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <!-- Google Fonts: Playfair Display (Headings) & Plus Jakarta Sans (Body) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <!-- ================= TOP NAVIGATION BAR ================= -->
+    <header class="site-header" id="top">
+      <div class="container header-inner">
+        <!-- Zone 1: Brand Wordmark -->
+        <a href="#home" class="brand-logo">FOOD GHARANA</a>
+
+        <!-- Zone 2: Desktop Navigation Links -->
+        <nav class="main-nav" aria-label="Primary Navigation">
+          <a href="#menu" class="nav-link">Menu</a>
+          <a href="#about" class="nav-link">About</a>
+          <a href="#gallery" class="nav-link">Gallery</a>
+          <a href="#contact" class="nav-link">Contact</a>
+        </nav>
+
+        <!-- Zone 3: Single Primary Action + Mobile Menu Toggle -->
+        <div class="header-actions">
+          <a href="#menu" class="btn btn-primary header-cta">Order Now</a>
+          <button
+            type="button"
+            class="mobile-menu-toggle"
+            id="mobileMenuToggle"
+            aria-label="Toggle navigation menu"
+            aria-expanded="false"
+            aria-controls="mobileDrawer"
+          >
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+            <span class="hamburger-line"></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Mobile Navigation Drawer -->
+      <div class="mobile-drawer" id="mobileDrawer" hidden>
+        <nav class="mobile-nav" aria-label="Mobile Navigation">
+          <a href="#menu" class="mobile-nav-link">Menu</a>
+          <a href="#about" class="mobile-nav-link">About</a>
+          <a href="#gallery" class="mobile-nav-link">Gallery</a>
+          <a href="#contact" class="mobile-nav-link">Contact</a>
+          <a
+            href="https://wa.me/919820451234?text=Hello%20Food%20Gharana%2C%20I%20would%20like%20to%20enquire%20about%20today%27s%20menu."
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-saffron mobile-drawer-cta"
+          >
+            WhatsApp Enquiry
+          </a>
+        </nav>
+      </div>
+    </header>
+
+    <main>
+      <!-- ================= HERO / HOMEPAGE SECTION ================= -->
+      <section class="hero-section" id="home">
+        <div class="container">
+          <div class="hero-grid">
+            <div class="hero-content">
+              <p class="eyebrow">Malad West, Mumbai &middot; Fresh Homemade Kitchen</p>
+              <h1 class="hero-title">
+                Authentic Homemade Indian Flavours, Fresh from Our Kitchen
+              </h1>
+              <p class="hero-subtitle">
+                Slow-simmered gravies, aromatic saffron biryanis, pure-ghee parathas, and festive
+                mithai prepared in small batches every morning for families across Malad West.
+              </p>
+
+              <div class="hero-actions">
+                <a href="#menu" class="btn btn-primary btn-lg">Explore the Menu</a>
+                <a
+                  href="https://wa.me/919820451234?text=Hello%20Food%20Gharana%2C%20I%20would%20like%20to%20order%20homemade%20food%20in%20Malad%20West."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-outline btn-lg"
+                >
+                  Enquire on WhatsApp
+                </a>
+              </div>
+            </div>
+
+            <div class="hero-media">
+              <div class="image-frame hero-image-frame">
+                <img
+                  src="/src/assets/images/hero_gharana_thali_1795592335883.jpg"
+                  alt="Royal homemade Indian thali served on brassware with dal makhani, paneer lababdar, saffron pulao, rotis, and gulab jamun"
+                  referrerpolicy="no-referrer"
+                  class="cover-image"
+                />
+                <div class="image-fallback" aria-hidden="true">
+                  <span>Food Gharana Royal Thali</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- 4-Column Kitchen Fact Strip Below Hero -->
+          <div class="hero-facts" aria-label="Kitchen Highlights">
+            <div class="fact-item">
+              <span class="fact-label">Kitchen Location</span>
+              <strong class="fact-value">Orlem, Malad West</strong>
+            </div>
+            <div class="fact-item">
+              <span class="fact-label">Fresh Dispatch</span>
+              <strong class="fact-value">11:00 AM &ndash; 10:00 PM</strong>
+            </div>
+            <div class="fact-item">
+              <span class="fact-label">Cooking Standard</span>
+              <strong class="fact-value">100% Pure Desi Ghee</strong>
+            </div>
+            <div class="fact-item">
+              <span class="fact-label">Order Options</span>
+              <strong class="fact-value">Tiffins &amp; Family Packs</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= FOOD MENU WITH PRICES ================= -->
+      <section class="menu-section" id="menu">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">Freshly Prepared Daily</p>
+              <h2 class="section-title">The Gharana Menu</h2>
+            </div>
+            <p class="section-desc">
+              Select dishes below to build your WhatsApp order, or browse our daily kitchen
+              specialties. All prices are inclusive of hygienic food-grade packaging.
+            </p>
+          </div>
+
+          <!-- Menu Filter Controls -->
+          <div class="menu-toolbar">
+            <div class="category-tabs" role="tablist" aria-label="Menu Categories">
+              <button type="button" class="tab-btn active" data-category="all" role="tab" aria-selected="true">
+                All Dishes
+              </button>
+              <button type="button" class="tab-btn" data-category="thalis" role="tab" aria-selected="false">
+                Gharana Thalis
+              </button>
+              <button type="button" class="tab-btn" data-category="mains" role="tab" aria-selected="false">
+                Royal Mains
+              </button>
+              <button type="button" class="tab-btn" data-category="biryani" role="tab" aria-selected="false">
+                Biryani &amp; Rice
+              </button>
+              <button type="button" class="tab-btn" data-category="breads" role="tab" aria-selected="false">
+                Breads &amp; Sides
+              </button>
+              <button type="button" class="tab-btn" data-category="mithai" role="tab" aria-selected="false">
+                Homemade Mithai
+              </button>
+            </div>
+
+            <div class="diet-filter" role="group" aria-label="Dietary Filter">
+              <button type="button" class="diet-btn active" data-diet="all">All</button>
+              <button type="button" class="diet-btn" data-diet="jain">Jain Option</button>
+            </div>
+          </div>
+
+          <!-- Menu Grid (Rendered & Updated by script.js) -->
+          <div class="menu-grid" id="menuGrid" aria-live="polite"></div>
+
+          <!-- Empty State (Shown if filter matches 0 items) -->
+          <div class="menu-empty" id="menuEmpty" hidden>
+            <p>No dishes match your current filter selection.</p>
+            <button type="button" class="btn btn-outline" id="resetFiltersBtn">Reset Filters</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= ABOUT SECTION ================= -->
+      <section class="about-section" id="about">
+        <div class="container">
+          <div class="about-grid">
+            <div class="about-media">
+              <div class="image-frame about-image-frame">
+                <img
+                  src="/src/assets/images/about_indian_kitchen_spices_1795592338233.jpg"
+                  alt="Brass mortar and pestle with whole spices, saffron strands, and simmering copper kadai in the Food Gharana home kitchen"
+                  referrerpolicy="no-referrer"
+                  class="cover-image"
+                />
+                <div class="image-fallback" aria-hidden="true">
+                  <span>Food Gharana Spice Prep</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="about-content">
+              <p class="eyebrow eyebrow-saffron">Our Kitchen Story</p>
+              <h2 class="section-title section-title-light">
+                Home-Cooked Heritage in the Heart of Malad West
+              </h2>
+              <p class="about-lead">
+                Food Gharana began in a family kitchen near Orlem, Malad West with a simple
+                promise: deliver the warmth, aroma, and unhurried care of Sunday family cooking to
+                Mumbai homes every single day.
+              </p>
+              <p class="about-body">
+                Unlike commercial cloud kitchens that rely on pre-mixed pastes or excess oil, every
+                dal is simmered overnight, every masala is dry-roasted and stone-ground in small
+                batches, and every sweet is crafted with A2 pure ghee and Kashmiri saffron.
+              </p>
+
+              <div class="pillars-list">
+                <div class="pillar-item">
+                  <h3 class="pillar-title">01. Hand-Roasted Whole Spices</h3>
+                  <p class="pillar-text">
+                    Freshly ground cardamom, Kashmiri chilies, and saffron threads for authentic
+                    aroma without artificial colors or preservatives.
+                  </p>
+                </div>
+                <div class="pillar-item">
+                  <h3 class="pillar-title">02. Cooked Fresh to Order</h3>
+                  <p class="pillar-text">
+                    Morning and evening kitchen batches ensure your thalis, parathas, and biryanis
+                    arrive steaming hot at your doorstep.
+                  </p>
+                </div>
+                <div class="pillar-item">
+                  <h3 class="pillar-title">03. Malad West Neighbourhood Delivery</h3>
+                  <p class="pillar-text">
+                    Prompt local dispatch across Orlem, Evershine Nagar, Mindspace, Link Road, and
+                    Chincholi Bunder.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Neighbourhood Testimonials -->
+          <div class="testimonials-block">
+            <h3 class="testimonials-heading">From Our Malad West Neighbours</h3>
+            <div class="testimonials-grid">
+              <article class="testimonial-card">
+                <p class="testimonial-quote">
+                  "We switched our weekday office lunches to Food Gharana's thalis four months ago.
+                  The Dal Makhani tastes genuinely slow-cooked, never heavy or overly oily."
+                </p>
+                <div class="testimonial-author">
+                  <strong>Rohan Deshmukh</strong>
+                  <span>Mindspace, Malad West</span>
+                </div>
+              </article>
+
+              <article class="testimonial-card">
+                <p class="testimonial-quote">
+                  "Ordered two family handis of Zafrani Dum Biryani and Kesar Rasmalai for our
+                  parents' anniversary dinner. Every guest asked where the food came from."
+                </p>
+                <div class="testimonial-author">
+                  <strong>Meera Parekh</strong>
+                  <span>Evershine Nagar, Malad West</span>
+                </div>
+              </article>
+
+              <article class="testimonial-card">
+                <p class="testimonial-quote">
+                  "Finding reliable Jain-friendly homemade food that still feels festive is rare.
+                  Their paneer lababdar and stuffed parathas are our weekend staple."
+                </p>
+                <div class="testimonial-author">
+                  <strong>Siddharth Mehta</strong>
+                  <span>Orlem, Malad West</span>
+                </div>
+              </article>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= GALLERY SECTION ================= -->
+      <section class="gallery-section" id="gallery">
+        <div class="container">
+          <div class="section-header">
+            <div>
+              <p class="eyebrow">From Our Table to Yours</p>
+              <h2 class="section-title">Kitchen &amp; Dish Gallery</h2>
+            </div>
+            <p class="section-desc">
+              Click any photograph to view closer details of our signature dishes, brassware
+              presentations, and freshly made sweets.
+            </p>
+          </div>
+
+          <div class="gallery-grid" id="galleryGrid">
+            <button
+              type="button"
+              class="gallery-card gallery-card-wide"
+              data-index="0"
+              aria-label="View Royal Gharana Thali photograph"
+            >
+              <img
+                src="/src/assets/images/hero_gharana_thali_1795592335883.jpg"
+                alt="Royal Gharana Thali served on hammered brassware"
+                referrerpolicy="no-referrer"
+              />
+              <span class="gallery-caption">Royal Gharana Thali &middot; Complete Meal</span>
+            </button>
+
+            <button
+              type="button"
+              class="gallery-card"
+              data-index="1"
+              aria-label="View Dal Makhani and Paneer Lababdar photograph"
+            >
+              <img
+                src="/src/assets/images/dish_dal_paneer_feast_1795592334977.jpg"
+                alt="Slow-simmered Dal Makhani and Paneer Lababdar in copper handis"
+                referrerpolicy="no-referrer"
+              />
+              <span class="gallery-caption">Dal Makhani &amp; Paneer Lababdar</span>
+            </button>
+
+            <button
+              type="button"
+              class="gallery-card"
+              data-index="2"
+              aria-label="View Zafrani Dum Biryani photograph"
+            >
+              <img
+                src="/src/assets/images/dish_saffron_biryani_1795592337063.jpg"
+                alt="Steaming Zafrani Dum Biryani in an earthen clay handi"
+                referrerpolicy="no-referrer"
+              />
+              <span class="gallery-caption">Zafrani Clay-Pot Dum Biryani</span>
+            </button>
+
+            <button
+              type="button"
+              class="gallery-card"
+              data-index="3"
+              aria-label="View Stuffed Parathas and Laccha Parathas photograph"
+            >
+              <img
+                src="/src/assets/images/dish_stuffed_paratha_breads_1795592338179.jpg"
+                alt="Flaky homemade laccha and stuffed parathas with white butter"
+                referrerpolicy="no-referrer"
+              />
+              <span class="gallery-caption">Pure Ghee Laccha &amp; Stuffed Parathas</span>
+            </button>
+
+            <button
+              type="button"
+              class="gallery-card gallery-card-wide"
+              data-index="4"
+              aria-label="View Homemade Kesar Rasmalai and Festive Mithai photograph"
+            >
+              <img
+                src="/src/assets/images/dish_kesar_mithai_1795592337775.jpg"
+                alt="Kesar Rasmalai, Gulab Jamun, and Besan Ladoo on marble"
+                referrerpolicy="no-referrer"
+              />
+              <span class="gallery-caption">Kesar Rasmalai, Gulab Jamun &amp; Besan Ladoo</span>
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <!-- ================= CONTACT FORM & DETAILS SECTION ================= -->
+      <section class="contact-section" id="contact">
+        <div class="container">
+          <div class="contact-grid">
+            <!-- Left Column: Malad West Address & Direct Contact -->
+            <div class="contact-info">
+              <p class="eyebrow">Visit or Order Direct</p>
+              <h2 class="section-title">Get in Touch with Our Malad West Kitchen</h2>
+              <p class="contact-intro">
+                Planning a family get-together, monthly home tiffin subscription, or festive mithai
+                hamper? Message us directly or send an enquiry below.
+              </p>
+
+              <dl class="contact-details-list">
+                <div class="contact-detail-row">
+                  <dt>Kitchen Address</dt>
+                  <dd>
+                    Shop 4, Ground Floor, Gulmohar Heritage Lane, Near Orlem Church, Malad West,
+                    Mumbai 400064
+                  </dd>
+                </div>
+                <div class="contact-detail-row">
+                  <dt>Phone &amp; WhatsApp</dt>
+                  <dd>
+                    <a href="tel:+919820451234" class="contact-link">+91 98204 51234</a>
+                  </dd>
+                </div>
+                <div class="contact-detail-row">
+                  <dt>Email</dt>
+                  <dd>
+                    <a href="mailto:orders@foodgharana.in" class="contact-link">orders@foodgharana.in</a>
+                  </dd>
+                </div>
+                <div class="contact-detail-row">
+                  <dt>Kitchen Hours</dt>
+                  <dd>Tuesday &ndash; Sunday: 11:00 AM &ndash; 10:00 PM (Monday: Pre-orders only)</dd>
+                </div>
+                <div class="contact-detail-row">
+                  <dt>Delivery Areas</dt>
+                  <dd>Orlem, Evershine Nagar, Mindspace, Link Road, Chincholi Bunder &amp; Marve Road</dd>
+                </div>
+              </dl>
+
+              <div class="contact-whatsapp-box">
+                <a
+                  href="https://wa.me/919820451234?text=Hello%20Food%20Gharana%2C%20I%20have%20an%20enquiry%20regarding%20homemade%20food%20delivery%20in%20Malad%20West."
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="btn btn-whatsapp btn-lg"
+                >
+                  Chat Directly on WhatsApp
+                </a>
+              </div>
+            </div>
+
+            <!-- Right Column: Validated Contact & Catering Form -->
+            <div class="contact-form-card">
+              <h3 class="form-heading">Send a Catering or Tiffin Enquiry</h3>
+              <form id="contactForm" novalidate>
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="customerName">Full Name <span aria-hidden="true">*</span></label>
+                    <input
+                      type="text"
+                      id="customerName"
+                      name="customerName"
+                      placeholder="e.g. Ananya Kulkarni"
+                      required
+                    />
+                    <span class="field-error" id="nameError" role="alert"></span>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="customerPhone">Phone / WhatsApp <span aria-hidden="true">*</span></label>
+                    <input
+                      type="tel"
+                      id="customerPhone"
+                      name="customerPhone"
+                      placeholder="e.g. 98204 51234"
+                      required
+                    />
+                    <span class="field-error" id="phoneError" role="alert"></span>
+                  </div>
+                </div>
+
+                <div class="form-row">
+                  <div class="form-group">
+                    <label for="customerEmail">Email Address</label>
+                    <input
+                      type="email"
+                      id="customerEmail"
+                      name="customerEmail"
+                      placeholder="e.g. ananya@example.com"
+                    />
+                    <span class="field-error" id="emailError" role="alert"></span>
+                  </div>
+
+                  <div class="form-group">
+                    <label for="enquiryType">Enquiry Type</label>
+                    <select id="enquiryType" name="enquiryType">
+                      <option value="Daily Homemade Tiffin">Daily Homemade Tiffin</option>
+                      <option value="Family Dinner Order">Family Dinner Order</option>
+                      <option value="House Party Catering">House Party Catering (10&ndash;50 guests)</option>
+                      <option value="Festive Mithai Hampers">Festive Mithai Hampers</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <label for="customerMessage">Your Message / Preferences <span aria-hidden="true">*</span></label>
+                  <textarea
+                    id="customerMessage"
+                    name="customerMessage"
+                    rows="4"
+                    placeholder="Share your delivery area in Malad West, preferred dishes, or Jain/spice preferences..."
+                    required
+                  ></textarea>
+                  <span class="field-error" id="messageError" role="alert"></span>
+                </div>
+
+                <div class="form-actions">
+                  <button type="submit" class="btn btn-primary btn-lg form-submit-btn">
+                    Submit Enquiry
+                  </button>
+                  <button type="button" class="btn btn-outline btn-lg" id="sendFormWhatsappBtn">
+                    Send via WhatsApp
+                  </button>
+                </div>
+
+                <!-- Confirmation Banner -->
+                <div class="form-success" id="formSuccess" role="status" hidden>
+                  <strong>Thank you! Your enquiry has been received.</strong>
+                  <p>
+                    Our Malad West kitchen team will reach out shortly on your phone number, or you
+                    can tap WhatsApp for an immediate reply.
+                  </p>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div class="footer-brand">
+          <a href="#home" class="footer-logo">FOOD GHARANA</a>
+          <p class="footer-tagline">
+            Authentic homemade Indian food crafted daily in Malad West, Mumbai.
+          </p>
+        </div>
+
+        <nav class="footer-nav" aria-label="Footer Navigation">
+          <a href="#menu">Menu</a>
+          <a href="#about">About</a>
+          <a href="#gallery">Gallery</a>
+          <a href="#contact">Contact</a>
+        </nav>
+
+        <p class="footer-copy">
+          &copy; <span id="currentYear"></span> Food Gharana, Malad West. All rights reserved.
+        </p>
+      </div>
+    </footer>
+
+    <!-- ================= FLOATING ORDER & WHATSAPP CONTROLS ================= -->
+    <div class="floating-controls" aria-label="Quick Order Actions">
+      <!-- Appears when dishes are added to order -->
+      <button
+        type="button"
+        class="order-tray-trigger"
+        id="orderTrayTrigger"
+        hidden
+        aria-label="Open your selected dishes order summary"
+      >
+        <span id="orderCountBadge">0 items</span>
+        <span class="tray-divider" aria-hidden="true">&middot;</span>
+        <span id="orderTotalBadge" class="tabular-nums">&#8377;0</span>
+        <span class="tray-cta-text">View Order</span>
+      </button>
+
+      <!-- Always-available WhatsApp Enquiry Button -->
+      <a
+        href="https://wa.me/919820451234?text=Hello%20Food%20Gharana%2C%20I%20would%20like%20to%20enquire%20about%20ordering%20homemade%20food."
+        target="_blank"
+        rel="noopener noreferrer"
+        class="floating-whatsapp-btn"
+        aria-label="Enquire on WhatsApp"
+      >
+        <svg
+          width="20"
+          height="20"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+          aria-hidden="true"
+        >
+          <path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+        </svg>
+        <span>WhatsApp</span>
+      </a>
+    </div>
+
+    <!-- ================= ORDER DRAWER MODAL ================= -->
+    <div class="order-drawer-backdrop" id="orderDrawerBackdrop" hidden>
+      <aside
+        class="order-drawer"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="orderDrawerTitle"
+      >
+        <div class="order-drawer-header">
+          <h3 id="orderDrawerTitle">Your Food Gharana Order</h3>
+          <button
+            type="button"
+            class="close-modal-btn"
+            id="closeOrderDrawer"
+            aria-label="Close order summary"
+          >
+            &times;
+          </button>
+        </div>
+
+        <div class="order-drawer-body" id="orderDrawerItems"></div>
+
+        <div class="order-drawer-footer">
+          <div class="order-summary-row">
+            <span>Subtotal</span>
+            <strong id="drawerSubtotal" class="tabular-nums">&#8377;0</strong>
+          </div>
+          <p class="order-delivery-note">
+            Free delivery across Malad West on orders above &#8377;500.
+          </p>
+          <a
+            href="#"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="btn btn-whatsapp btn-lg drawer-whatsapp-link"
+            id="drawerWhatsappLink"
+          >
+            Place Order on WhatsApp
+          </a>
+          <button type="button" class="btn btn-outline clear-order-btn" id="clearOrderBtn">
+            Clear Selection
+          </button>
+        </div>
+      </aside>
+    </div>
+
+    <!-- ================= GALLERY LIGHTBOX MODAL ================= -->
+    <div class="lightbox-backdrop" id="lightboxBackdrop" hidden>
+      <div class="lightbox-dialog" role="dialog" aria-modal="true" aria-labelledby="lightboxCaption">
+        <button
+          type="button"
+          class="close-modal-btn lightbox-close"
+          id="closeLightbox"
+          aria-label="Close gallery preview"
+        >
+          &times;
+        </button>
+        <img id="lightboxImage" src="" alt="" referrerpolicy="no-referrer" />
+        <div class="lightbox-bar">
+          <p id="lightboxCaption"></p>
+          <div class="lightbox-nav">
+            <button type="button" class="btn btn-outline" id="lightboxPrev">Previous</button>
+            <button type="button" class="btn btn-outline" id="lightboxNext">Next</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main JavaScript -->
+    <script type="module" src="/script.js"></script>
+  </body>
+</html>
