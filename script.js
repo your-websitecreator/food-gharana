@@ -15,7 +15,7 @@ const MENU_ITEMS = [
     jainAvailable: true,
     portion: 'Serves 1',
     price: 340,
-    image: '/src/assets/images/hero_gharana_thali_1795592335883.jpg',
+    image: './src/assets/images/hero_gharana_thali_1795592335883.jpg',
     description:
       'Dal Makhani, Paneer Lababdar, saffron jeera pulao, 3 pure-ghee rotis, cucumber raita, pickle, and 2 warm gulab jamuns.',
   },
@@ -27,7 +27,7 @@ const MENU_ITEMS = [
     jainAvailable: true,
     portion: 'Serves 1',
     price: 240,
-    image: '/src/assets/images/dish_dal_paneer_feast_1795592334977.jpg',
+    image: './src/assets/images/dish_dal_paneer_feast_1795592334977.jpg',
     description:
       'Yellow dal tadka, seasonal dry sabzi, steamed basmati rice, 4 soft phulkas with desi ghee, and roasted papad.',
   },
@@ -39,7 +39,7 @@ const MENU_ITEMS = [
     jainAvailable: true,
     portion: '450g Handi (Serves 2)',
     price: 320,
-    image: '/src/assets/images/dish_dal_paneer_feast_1795592334977.jpg',
+    image: './src/assets/images/dish_dal_paneer_feast_1795592334977.jpg',
     description:
       'Soft homemade malai paneer cubes simmered in rich tomato-cashew gravy finished with kasuri methi and ginger juliennes.',
   },
@@ -51,7 +51,7 @@ const MENU_ITEMS = [
     jainAvailable: false,
     portion: '450g Handi (Serves 2)',
     price: 290,
-    image: '/src/assets/images/dish_dal_paneer_feast_1795592334977.jpg',
+    image: './src/assets/images/dish_dal_paneer_feast_1795592334977.jpg',
     description:
       'Whole black urad lentils slow-cooked for 12 hours with farm tomatoes, white butter, and a swirl of fresh cream.',
   },
@@ -63,7 +63,7 @@ const MENU_ITEMS = [
     jainAvailable: true,
     portion: '650g Handi (Serves 2)',
     price: 360,
-    image: '/src/assets/images/dish_saffron_biryani_1795592337063.jpg',
+    image: './src/assets/images/dish_saffron_biryani_1795592337063.jpg',
     description:
       'Aged long-grain basmati rice layered with spiced seasonal vegetables, Kashmiri saffron milk, toasted cashews, and mint raita.',
   },
@@ -75,7 +75,7 @@ const MENU_ITEMS = [
     jainAvailable: true,
     portion: '450g Box (Serves 2)',
     price: 210,
-    image: '/src/assets/images/hero_gharana_thali_1795592335883.jpg',
+    image: './src/assets/images/hero_gharana_thali_1795592335883.jpg',
     description:
       'Fragrant basmati rice tempered with cumin seeds, whole green cardamom, and golden saffron strands in pure A2 ghee.',
   },
@@ -87,7 +87,7 @@ const MENU_ITEMS = [
     jainAvailable: false,
     portion: '2 Parathas + Curd',
     price: 190,
-    image: '/src/assets/images/dish_stuffed_paratha_breads_1795592338179.jpg',
+    image: './src/assets/images/dish_stuffed_paratha_breads_1795592338179.jpg',
     description:
       'Whole-wheat parathas stuffed with spiced paneer and herbs, pan-seared in desi ghee and served with white makhan, curd, and mango pickle.',
   },
@@ -99,7 +99,7 @@ const MENU_ITEMS = [
     jainAvailable: true,
     portion: 'Set of 2',
     price: 120,
-    image: '/src/assets/images/dish_stuffed_paratha_breads_1795592338179.jpg',
+    image: './src/assets/images/dish_stuffed_paratha_breads_1795592338179.jpg',
     description:
       'Crisp, multi-layered whole-wheat flatbreads brushed generously with homemade ghee. Ideal pairing for rich curries.',
   },
@@ -111,7 +111,7 @@ const MENU_ITEMS = [
     jainAvailable: true,
     portion: '4 Pieces',
     price: 220,
-    image: '/src/assets/images/dish_kesar_mithai_1795592337775.jpg',
+    image: './src/assets/images/dish_kesar_mithai_1795592337775.jpg',
     description:
       'Delicate homemade chenna patties soaked in saffron-infused cardamom milk and garnished with slivered pistachios and rose petals.',
   },
@@ -123,7 +123,7 @@ const MENU_ITEMS = [
     jainAvailable: true,
     portion: '6 Assorted Pieces',
     price: 260,
-    image: '/src/assets/images/dish_kesar_mithai_1795592337775.jpg',
+    image: './src/assets/images/dish_kesar_mithai_1795592337775.jpg',
     description:
       'Warm khoya gulab jamuns in rose syrup paired with slow-roasted pure ghee besan ladoos topped with roasted nuts.',
   },
@@ -132,27 +132,27 @@ const MENU_ITEMS = [
 // 2. Gallery Items for Lightbox Preview
 const GALLERY_ITEMS = [
   {
-    src: '/src/assets/images/hero_gharana_thali_1795592335883.jpg',
+    src: './src/assets/images/hero_gharana_thali_1795592335883.jpg',
     alt: 'Royal Gharana Thali served on hammered brassware',
     caption: 'Royal Gharana Thali — Complete Homemade Meal',
   },
   {
-    src: '/src/assets/images/dish_dal_paneer_feast_1795592334977.jpg',
+    src: './src/assets/images/dish_dal_paneer_feast_1795592334977.jpg',
     alt: 'Slow-simmered Dal Makhani and Paneer Lababdar in copper handis',
     caption: 'Overnight Dal Makhani & Slow-Simmered Paneer Lababdar',
   },
   {
-    src: '/src/assets/images/dish_saffron_biryani_1795592337063.jpg',
+    src: './src/assets/images/dish_saffron_biryani_1795592337063.jpg',
     alt: 'Steaming Zafrani Dum Biryani in an earthen clay handi',
     caption: 'Zafrani Clay-Pot Dum Biryani with Mint Raita',
   },
   {
-    src: '/src/assets/images/dish_stuffed_paratha_breads_1795592338179.jpg',
+    src: './src/assets/images/dish_stuffed_paratha_breads_1795592338179.jpg',
     alt: 'Flaky homemade laccha and stuffed parathas with white butter',
     caption: 'Pure Ghee Stuffed & Laccha Parathas with Makhan',
   },
   {
-    src: '/src/assets/images/dish_kesar_mithai_1795592337775.jpg',
+    src: './src/assets/images/dish_kesar_mithai_1795592337775.jpg',
     alt: 'Kesar Rasmalai, Gulab Jamun, and Besan Ladoo on marble',
     caption: 'Homemade Kesar Rasmalai, Gulab Jamun & Besan Ladoo',
   },
@@ -274,6 +274,8 @@ function renderMenu() {
       `;
     })
     .join('');
+
+  attachImageFallbacks(menuGrid);
 }
 
 // Category tab clicks
@@ -565,8 +567,22 @@ sendFormWhatsappBtn?.addEventListener('click', () => {
 });
 
 // ============================================================================
+// GRACEFUL IMAGE FALLBACK HANDLER
+// ============================================================================
+function attachImageFallbacks(root = document) {
+  root.querySelectorAll('img').forEach((img) => {
+    if (img.dataset.fallbackBound === 'true') return;
+    img.dataset.fallbackBound = 'true';
+    img.addEventListener('error', () => {
+      img.style.display = 'none';
+    });
+  });
+}
+
+// ============================================================================
 // INITIALIZE PAGE
 // ============================================================================
 document.getElementById('currentYear').textContent = String(new Date().getFullYear());
+attachImageFallbacks(document);
 renderMenu();
 updateOrderSummary();
