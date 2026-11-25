@@ -3,7 +3,9 @@
 // Beginner-friendly JavaScript (ES6+)
 // ============================================================================
 
-const WHATSAPP_NUMBER = '919820451234';
+const WHATSAPP_NUMBER = '919909782620';
+const DEFAULT_WHATSAPP_MESSAGE =
+  'Hello Food Gharana! I would like to enquire about your food menu and orders.';
 
 // 1. Menu Data (Sample Homemade Dishes with Prices in INR)
 const MENU_ITEMS = [
@@ -15,7 +17,7 @@ const MENU_ITEMS = [
     jainAvailable: true,
     portion: 'Serves 1',
     price: 340,
-    image: './src/assets/images/hero_gharana_thali_1795592335883.jpg',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/1/12/Traditional_North_Indian_Thali.jpg',
     description:
       'Dal Makhani, Paneer Lababdar, saffron jeera pulao, 3 pure-ghee rotis, cucumber raita, pickle, and 2 warm gulab jamuns.',
   },
@@ -27,7 +29,7 @@ const MENU_ITEMS = [
     jainAvailable: true,
     portion: 'Serves 1',
     price: 240,
-    image: './src/assets/images/dish_dal_paneer_feast_1795592334977.jpg',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/3/35/Dal_Makhani_01.jpg',
     description:
       'Yellow dal tadka, seasonal dry sabzi, steamed basmati rice, 4 soft phulkas with desi ghee, and roasted papad.',
   },
@@ -39,7 +41,7 @@ const MENU_ITEMS = [
     jainAvailable: true,
     portion: '450g Handi (Serves 2)',
     price: 320,
-    image: './src/assets/images/dish_dal_paneer_feast_1795592334977.jpg',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/e/e1/Paneer_Butter_Masala.jpg',
     description:
       'Soft homemade malai paneer cubes simmered in rich tomato-cashew gravy finished with kasuri methi and ginger juliennes.',
   },
@@ -51,7 +53,7 @@ const MENU_ITEMS = [
     jainAvailable: false,
     portion: '450g Handi (Serves 2)',
     price: 290,
-    image: './src/assets/images/dish_dal_paneer_feast_1795592334977.jpg',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/3/35/Dal_Makhani_01.jpg',
     description:
       'Whole black urad lentils slow-cooked for 12 hours with farm tomatoes, white butter, and a swirl of fresh cream.',
   },
@@ -63,7 +65,7 @@ const MENU_ITEMS = [
     jainAvailable: true,
     portion: '650g Handi (Serves 2)',
     price: 360,
-    image: './src/assets/images/dish_saffron_biryani_1795592337063.jpg',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/7/7a/Hyderabadi_Vegetable_Biryani.jpg',
     description:
       'Aged long-grain basmati rice layered with spiced seasonal vegetables, Kashmiri saffron milk, toasted cashews, and mint raita.',
   },
@@ -75,7 +77,7 @@ const MENU_ITEMS = [
     jainAvailable: true,
     portion: '450g Box (Serves 2)',
     price: 210,
-    image: './src/assets/images/hero_gharana_thali_1795592335883.jpg',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/7/7a/Hyderabadi_Vegetable_Biryani.jpg',
     description:
       'Fragrant basmati rice tempered with cumin seeds, whole green cardamom, and golden saffron strands in pure A2 ghee.',
   },
@@ -87,7 +89,7 @@ const MENU_ITEMS = [
     jainAvailable: false,
     portion: '2 Parathas + Curd',
     price: 190,
-    image: './src/assets/images/dish_stuffed_paratha_breads_1795592338179.jpg',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/a/ad/Aloo_Paratha_with_Butter_from_India.jpg',
     description:
       'Whole-wheat parathas stuffed with spiced paneer and herbs, pan-seared in desi ghee and served with white makhan, curd, and mango pickle.',
   },
@@ -99,7 +101,7 @@ const MENU_ITEMS = [
     jainAvailable: true,
     portion: 'Set of 2',
     price: 120,
-    image: './src/assets/images/dish_stuffed_paratha_breads_1795592338179.jpg',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/a/ad/Aloo_Paratha_with_Butter_from_India.jpg',
     description:
       'Crisp, multi-layered whole-wheat flatbreads brushed generously with homemade ghee. Ideal pairing for rich curries.',
   },
@@ -111,7 +113,7 @@ const MENU_ITEMS = [
     jainAvailable: true,
     portion: '4 Pieces',
     price: 220,
-    image: './src/assets/images/dish_kesar_mithai_1795592337775.jpg',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/b/bd/Rasmalai_-_the_King_of_Indian_Sweets.JPG',
     description:
       'Delicate homemade chenna patties soaked in saffron-infused cardamom milk and garnished with slivered pistachios and rose petals.',
   },
@@ -123,7 +125,7 @@ const MENU_ITEMS = [
     jainAvailable: true,
     portion: '6 Assorted Pieces',
     price: 260,
-    image: './src/assets/images/dish_kesar_mithai_1795592337775.jpg',
+    image: 'https://upload.wikimedia.org/wikipedia/commons/5/56/Gulab_Jamun.jpg',
     description:
       'Warm khoya gulab jamuns in rose syrup paired with slow-roasted pure ghee besan ladoos topped with roasted nuts.',
   },
@@ -132,28 +134,28 @@ const MENU_ITEMS = [
 // 2. Gallery Items for Lightbox Preview
 const GALLERY_ITEMS = [
   {
-    src: './src/assets/images/hero_gharana_thali_1795592335883.jpg',
-    alt: 'Royal Gharana Thali served on hammered brassware',
+    src: 'https://upload.wikimedia.org/wikipedia/commons/1/12/Traditional_North_Indian_Thali.jpg',
+    alt: 'Traditional North Indian Gharana Thali',
     caption: 'Royal Gharana Thali — Complete Homemade Meal',
   },
   {
-    src: './src/assets/images/dish_dal_paneer_feast_1795592334977.jpg',
-    alt: 'Slow-simmered Dal Makhani and Paneer Lababdar in copper handis',
+    src: 'https://upload.wikimedia.org/wikipedia/commons/e/e1/Paneer_Butter_Masala.jpg',
+    alt: 'Rich Paneer Butter Masala served fresh',
     caption: 'Overnight Dal Makhani & Slow-Simmered Paneer Lababdar',
   },
   {
-    src: './src/assets/images/dish_saffron_biryani_1795592337063.jpg',
-    alt: 'Steaming Zafrani Dum Biryani in an earthen clay handi',
+    src: 'https://upload.wikimedia.org/wikipedia/commons/7/7a/Hyderabadi_Vegetable_Biryani.jpg',
+    alt: 'Fragrant saffron Hyderabadi Vegetable Dum Biryani',
     caption: 'Zafrani Clay-Pot Dum Biryani with Mint Raita',
   },
   {
-    src: './src/assets/images/dish_stuffed_paratha_breads_1795592338179.jpg',
-    alt: 'Flaky homemade laccha and stuffed parathas with white butter',
+    src: 'https://upload.wikimedia.org/wikipedia/commons/a/ad/Aloo_Paratha_with_Butter_from_India.jpg',
+    alt: 'Golden homemade stuffed paratha topped with butter',
     caption: 'Pure Ghee Stuffed & Laccha Parathas with Makhan',
   },
   {
-    src: './src/assets/images/dish_kesar_mithai_1795592337775.jpg',
-    alt: 'Kesar Rasmalai, Gulab Jamun, and Besan Ladoo on marble',
+    src: 'https://upload.wikimedia.org/wikipedia/commons/0/07/Indian_sweet_delight.jpg',
+    alt: 'Homemade Kesar Rasmalai and Gulab Jamun dessert platter',
     caption: 'Homemade Kesar Rasmalai, Gulab Jamun & Besan Ladoo',
   },
 ];
@@ -194,6 +196,53 @@ const lightboxNext = document.getElementById('lightboxNext');
 const contactForm = document.getElementById('contactForm');
 const sendFormWhatsappBtn = document.getElementById('sendFormWhatsappBtn');
 const formSuccess = document.getElementById('formSuccess');
+
+// ============================================================================
+// ATTRACTIVE SVG FALLBACK IMAGE GENERATOR
+// ============================================================================
+function escapeXml(str) {
+  return String(str)
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;')
+    .replace(/'/g, '&#39;');
+}
+
+function createFallbackImageDataUrl(labelText = 'Food Gharana Homemade Dish') {
+  const safeLabel = escapeXml(labelText.slice(0, 44));
+  const svg = `
+    <svg xmlns="http://www.w3.org/2000/svg" width="800" height="600" viewBox="0 0 800 600">
+      <defs>
+        <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+          <stop offset="0%" stop-color="#FCF8F2" />
+          <stop offset="100%" stop-color="#F2E2CC" />
+        </linearGradient>
+      </defs>
+      <rect width="800" height="600" fill="url(#bg)" />
+      <rect x="24" y="24" width="752" height="552" rx="16" fill="none" stroke="#5B1020" stroke-opacity="0.22" stroke-width="2" />
+      <circle cx="400" cy="235" r="76" fill="#5B1020" />
+      <circle cx="400" cy="235" r="64" fill="none" stroke="#EAA221" stroke-width="3" />
+      <circle cx="400" cy="235" r="24" fill="#EAA221" />
+      <text x="400" y="365" text-anchor="middle" font-family="Georgia, serif" font-size="30" font-weight="700" fill="#5B1020">FOOD GHARANA</text>
+      <text x="400" y="410" text-anchor="middle" font-family="Georgia, serif" font-size="22" fill="#251317">${safeLabel}</text>
+      <text x="400" y="452" text-anchor="middle" font-family="Arial, sans-serif" font-size="16" fill="#C46E09">Malad West · Fresh Homemade Kitchen</text>
+    </svg>
+  `.trim();
+  return `data:image/svg+xml;charset=UTF-8,${encodeURIComponent(svg)}`;
+}
+
+function attachImageFallbacks(root = document) {
+  root.querySelectorAll('img').forEach((img) => {
+    if (img.dataset.fallbackBound === 'true') return;
+    img.dataset.fallbackBound = 'true';
+    img.addEventListener('error', () => {
+      if (img.dataset.fallbackApplied === 'true') return;
+      img.dataset.fallbackApplied = 'true';
+      img.src = createFallbackImageDataUrl(img.alt || 'Food Gharana Dish');
+    });
+  });
+}
 
 // ============================================================================
 // MOBILE NAVIGATION DRAWER
@@ -278,7 +327,6 @@ function renderMenu() {
   attachImageFallbacks(menuGrid);
 }
 
-// Category tab clicks
 categoryTabs.forEach((tab) => {
   tab.addEventListener('click', () => {
     activeCategory = tab.dataset.category || 'all';
@@ -291,7 +339,6 @@ categoryTabs.forEach((tab) => {
   });
 });
 
-// Diet filter clicks
 dietButtons.forEach((btn) => {
   btn.addEventListener('click', () => {
     activeDiet = btn.dataset.diet || 'all';
@@ -300,7 +347,6 @@ dietButtons.forEach((btn) => {
   });
 });
 
-// Reset filters
 resetFiltersBtn?.addEventListener('click', () => {
   activeCategory = 'all';
   activeDiet = 'all';
@@ -313,7 +359,6 @@ resetFiltersBtn?.addEventListener('click', () => {
   renderMenu();
 });
 
-// Delegate Add / Increase / Decrease clicks on menu cards
 menuGrid?.addEventListener('click', (event) => {
   const button = event.target.closest('button[data-action]');
   if (!button) return;
@@ -339,10 +384,7 @@ function updateCartQuantity(itemId, delta) {
 }
 
 function buildWhatsappOrderUrl(items, total) {
-  const lines = [
-    'Hello Food Gharana! I would like to place a homemade food order (Malad West):',
-    '',
-  ];
+  const lines = [DEFAULT_WHATSAPP_MESSAGE, '', 'Selected Order (Malad West):'];
   items.forEach(({ item, qty }) => {
     lines.push(`• ${item.name} x ${qty} = ₹${item.price * qty}`);
   });
@@ -433,6 +475,7 @@ clearOrderBtn?.addEventListener('click', () => {
 function openLightbox(index) {
   currentGalleryIndex = (index + GALLERY_ITEMS.length) % GALLERY_ITEMS.length;
   const photo = GALLERY_ITEMS[currentGalleryIndex];
+  lightboxImage.dataset.fallbackApplied = 'false';
   lightboxImage.src = photo.src;
   lightboxImage.alt = photo.alt;
   lightboxCaption.textContent = photo.caption;
@@ -471,8 +514,36 @@ document.addEventListener('keydown', (event) => {
 });
 
 // ============================================================================
-// CONTACT FORM VALIDATION & SUBMISSION
+// CONTACT FORM VALIDATION & LIVE WHATSAPP LINK SYNC
 // ============================================================================
+function updateFormWhatsappHref() {
+  if (!sendFormWhatsappBtn) return;
+
+  const name = document.getElementById('customerName')?.value.trim() || '';
+  const phone = document.getElementById('customerPhone')?.value.trim() || '';
+  const enquiryType = document.getElementById('enquiryType')?.value || '';
+  const message = document.getElementById('customerMessage')?.value.trim() || '';
+
+  const lines = [DEFAULT_WHATSAPP_MESSAGE];
+  if (name || phone || message) {
+    lines.push('');
+    if (name) lines.push(`Name: ${name}`);
+    if (phone) lines.push(`Phone: ${phone}`);
+    if (enquiryType) lines.push(`Enquiry Type: ${enquiryType}`);
+    if (message) lines.push(`Details: ${message}`);
+  }
+
+  sendFormWhatsappBtn.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(
+    lines.join('\n')
+  )}`;
+}
+
+['customerName', 'customerPhone', 'enquiryType', 'customerMessage'].forEach((id) => {
+  const el = document.getElementById(id);
+  el?.addEventListener('input', updateFormWhatsappHref);
+  el?.addEventListener('change', updateFormWhatsappHref);
+});
+
 function validateContactForm() {
   const nameInput = document.getElementById('customerName');
   const phoneInput = document.getElementById('customerPhone');
@@ -486,7 +557,6 @@ function validateContactForm() {
 
   let isValid = true;
 
-  // Validate Name
   if (nameInput.value.trim().length < 2) {
     nameError.textContent = 'Please enter your full name.';
     nameInput.classList.add('invalid');
@@ -496,7 +566,6 @@ function validateContactForm() {
     nameInput.classList.remove('invalid');
   }
 
-  // Validate Phone (at least 10 digits)
   const digitsOnly = phoneInput.value.replace(/\D/g, '');
   if (digitsOnly.length < 10) {
     phoneError.textContent = 'Please enter a valid 10-digit phone or WhatsApp number.';
@@ -507,7 +576,6 @@ function validateContactForm() {
     phoneInput.classList.remove('invalid');
   }
 
-  // Validate Email (optional field, validate format if entered)
   const emailVal = emailInput.value.trim();
   if (emailVal && !/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailVal)) {
     emailError.textContent = 'Please enter a valid email address.';
@@ -518,7 +586,6 @@ function validateContactForm() {
     emailInput.classList.remove('invalid');
   }
 
-  // Validate Message
   if (messageInput.value.trim().length < 8) {
     messageError.textContent = 'Please include a short note about your enquiry.';
     messageInput.classList.add('invalid');
@@ -541,43 +608,8 @@ contactForm?.addEventListener('submit', (event) => {
 
   formSuccess.hidden = false;
   contactForm.reset();
+  updateFormWhatsappHref();
 });
-
-sendFormWhatsappBtn?.addEventListener('click', () => {
-  const name = document.getElementById('customerName').value.trim() || 'Guest';
-  const phone = document.getElementById('customerPhone').value.trim();
-  const enquiryType = document.getElementById('enquiryType').value;
-  const message = document.getElementById('customerMessage').value.trim();
-
-  const text = [
-    `Hello Food Gharana!`,
-    `Name: ${name}`,
-    phone ? `Phone: ${phone}` : '',
-    `Enquiry Type: ${enquiryType}`,
-    message ? `Details: ${message}` : 'I would like to know more about your homemade food options in Malad West.',
-  ]
-    .filter(Boolean)
-    .join('\n');
-
-  const link = document.createElement('a');
-  link.href = `https://wa.me/${WHATSAPP_NUMBER}?text=${encodeURIComponent(text)}`;
-  link.target = '_blank';
-  link.rel = 'noopener noreferrer';
-  link.click();
-});
-
-// ============================================================================
-// GRACEFUL IMAGE FALLBACK HANDLER
-// ============================================================================
-function attachImageFallbacks(root = document) {
-  root.querySelectorAll('img').forEach((img) => {
-    if (img.dataset.fallbackBound === 'true') return;
-    img.dataset.fallbackBound = 'true';
-    img.addEventListener('error', () => {
-      img.style.display = 'none';
-    });
-  });
-}
 
 // ============================================================================
 // INITIALIZE PAGE
@@ -586,3 +618,4 @@ document.getElementById('currentYear').textContent = String(new Date().getFullYe
 attachImageFallbacks(document);
 renderMenu();
 updateOrderSummary();
+updateFormWhatsappHref();
