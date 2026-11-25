@@ -1010,7 +1010,7 @@ textarea {
   background-color: var(--cream);
   border: 1px solid var(--cream-border);
   border-radius: var(--radius-lg);
-  padding: 28px;
+  padding: 24px 20px;
   box-shadow: var(--shadow-card);
 }
 
@@ -1367,8 +1367,14 @@ textarea {
 
 .lightbox-dialog img {
   width: 100%;
-  max-height: 70vh;
+  max-height: 62vh;
   object-fit: cover;
+}
+
+@media (min-width: 768px) {
+  .lightbox-dialog img {
+    max-height: 70vh;
+  }
 }
 
 .lightbox-bar {
